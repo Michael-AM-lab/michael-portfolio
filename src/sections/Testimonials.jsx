@@ -20,7 +20,9 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-white-50">{testimonial.mentions}</p>
+                  {testimonial.mentions && (
+                    <p className="text-white-50">{testimonial.mentions}</p>
+                  )}
                 </div>
               </div>
             </GlowCard>

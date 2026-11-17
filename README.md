@@ -100,17 +100,15 @@ Install the project dependencies using npm:
 npm install
 ```
 
-**Set Up Environment Variables**
+**Set Up Formspree**
 
-Create a new file named `.env` in the root of your project and add the following content:
+Create a form in your [Formspree dashboard](https://formspree.io/) and set its recipient email. Copy the form ID from the endpoint URL, then create `.env.local` in the project root (next to `package.json`) with:
 
 ```env
-VITE_APP_EMAILJS_SERVICE_ID=
-VITE_APP_EMAILJS_TEMPLATE_ID=
-VITE_APP_EMAILJS_PUBLIC_KEY=
+VITE_FORMSPREE_FORM_ID=your_form_id
 ```
 
-Replace the placeholder values with your actual **[EmailJS](https://www.emailjs.com/)** credentials.
+Replace `your_form_id` with the part after `/f/` in your Formspree endpoint URL, not the full URL. Restart the dev server after changing environment variables. The contact form submits the `name`, `email`, and `message` fields to Formspree.
 
 **Running the Project**
 

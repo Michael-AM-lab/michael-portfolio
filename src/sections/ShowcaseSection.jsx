@@ -22,7 +22,7 @@ const projectLinks = {
   },
   ycDirectory: {
     type: "design",
-    figma: "https://www.figma.com/design/6r4UtfSRxe3FUlsHTnaLGW/Untitled?node-id=0-1&t=Q8xMgHbtLWwDh0mb-1",
+    figma: "https://www.figma.com/proto/6r4UtfSRxe3FUlsHTnaLGW/Untitled?node-id=1-2&t=3hImopJpw7nfIQTp-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
   },
 };
 
@@ -107,11 +107,19 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                Nyamatusi - A Wildlife Conservation App
+                Nyamatusi: A Wildlife Conservation App
               </h2>
               <p className="text-white-50 md:text-xl">
                 An app built using JavaScript, React, Tailwindcss.
               </p>
+              <a
+                href="https://github.com/Michael-AM-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white-50 underline underline-offset-4 transition-colors hover:text-white"
+              >
+                Check out my projects
+              </a>
             </div>
           </div>
 
@@ -127,7 +135,7 @@ const AppShowcase = () => {
                   projectName="Gwayi Primary School"
                 />
               </div>
-              <h2>Gwayi Primary School - A School App</h2>
+              <h2>Gwayi Primary School: A School App</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
@@ -138,7 +146,7 @@ const AppShowcase = () => {
                   projectName="Wildwatch"
                 />
               </div>
-              <h2>Wildwatch - A Wildlife Conservation App</h2>
+              <h2>Wildwatch: A Wildlife Conservation App</h2>
             </div>
           </div>
         </div>

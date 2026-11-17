@@ -1,3 +1,5 @@
+import githubIcon from "simple-icons/icons/github.svg?url";
+
 const navLinks = [
   {
     name: "Work",
@@ -201,58 +203,62 @@ const expLogos = [
 const testimonials = [
   {
     name: "Nkosinamandla Moyo ( Design instructor)",
-    mentions: "@nkosinamandlamoyo",
+    mentions: "@nkosinamandlamoyo", 
     review:
      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgPath: "/images/",
+    
   },
   {
     name: "Sandra Sibanda ( S.W.E instructor)", 
     mentions: "@sandrasibanda",
     review:
        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgPath: "/images/",
+    
   },
   {
     name: "Charlotte Ncube ( S.W.E instructor)",
     mentions: "@charlottencube",
     review:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgPath: "/images/",
+    
   },
   
   {
+    name: "Dingulwazi Mntungwa ( Cohort )",
+    mentions: "@dingulwazimntungwa",
+    review:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    
+  },
+ 
+   {
     name: "Obediant Tshuma ( Marketing instructor)",
     mentions: "@obedianttshuma",
     review:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgPath: "/images/",
+    
   },
-  {
-    name: "Dingulwazi Mntungwa",
-    mentions: "@dingulwazimntungwa",
+
+   {
+    name: "Auxilia Tshuma (Cohort )",
+    mentions: "@auxiliatshuma",
     review:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgPath: "/images/",
+    
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "GitHub",
+    imgPath: githubIcon,
+    link: "https://github.com/Michael-AM-lab"
   },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+ 
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/michael-mlonyeni-637718405"
   },
 ];
 
