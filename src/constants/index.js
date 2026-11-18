@@ -2,7 +2,7 @@ import githubIcon from "simple-icons/icons/github.svg?url";
 
 const navLinks = [
   {
-    name: "Work",
+    name: "Projects",
     link: "#work",
   },
   {

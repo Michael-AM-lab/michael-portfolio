@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -12,7 +12,17 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.035em;
 }
 
 section {
@@ -20,7 +30,8 @@ section {
 }
 
 @theme {
-  --font-sans: "Open Sans", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
   --color-white-50: #d9ecff;
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
@@ -86,6 +97,9 @@ section {
 
   .hero-text {
     @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
+    font-family: var(--font-display);
+    letter-spacing: -0.055em;
+    line-height: 1.08;
     img {
       @apply size-8 md:size-10 object-contain;
     }
@@ -145,7 +159,7 @@ section {
       @apply flex;
 
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-5 py-2 rounded-full bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
@@ -158,14 +172,14 @@ section {
     @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
     .showcaselayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+      @apply flex xl:flex-row flex-col gap-10 justify-between xl:items-stretch;
     }
 
     .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[60%];
+      @apply flex flex-col justify-between xl:w-[60%] xl:self-stretch;
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-full xl:shrink-0 md:h-[50vh] h-96 relative;
 
         img {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
@@ -259,7 +273,7 @@ section {
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-full bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
@@ -268,7 +282,7 @@ section {
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500
+      @apply normal-case md:text-lg text-black transition-all duration-500
         group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
     }
 
