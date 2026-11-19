@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -12,7 +12,7 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +30,7 @@ section {
 }
 
 @theme {
-  --font-sans: "DM Sans", sans-serif;
+  --font-sans: "Open Sans", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --color-white-50: #d9ecff;
   --color-black-50: #1c1c21;
@@ -114,6 +114,38 @@ section {
 
   .hero-3d-layout {
     @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+  }
+
+  .scroll-cue-icon {
+    animation: scroll-cue-bounce 1.8s ease-in-out infinite;
+  }
+
+  .scroll-cue {
+    bottom: 1.5rem;
+  }
+
+  @media (max-width: 767px) {
+    .scroll-cue {
+      bottom: max(1.5rem, calc(9.5rem - 20vh));
+    }
+  }
+
+  @media (min-width: 768px) {
+    .scroll-cue {
+      bottom: 9.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .scroll-cue {
+      bottom: 6.5rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-cue-icon {
+      animation: none;
+    }
   }
 
   .navbar {
@@ -374,6 +406,10 @@ section {
       @apply text-center md:text-start cursor-pointer;
     }
 
+    .footer-download {
+      @apply inline-flex items-center justify-center rounded-xl border border-black-50 bg-black-100 px-4 py-2 text-sm font-medium text-white-50 transition-colors duration-300 hover:bg-black-50 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white;
+    }
+
     .socials {
       @apply flex items-center justify-center gap-5;
 
@@ -382,7 +418,12 @@ section {
       }
 
       img {
-        @apply inline-block;
+        @apply inline-block size-5 md:size-6;
+        filter: invert(1);
+      }
+
+      .linkedin-icon {
+        filter: brightness(0) invert(1);
       }
     }
   }
@@ -393,6 +434,16 @@ section {
   display: inline-block;
   flex-direction: column;
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+}
+
+@keyframes scroll-cue-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 .wrapper {

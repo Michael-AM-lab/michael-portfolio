@@ -173,12 +173,12 @@ const expCards = [
     ],
   },
   {
-    review: "Michael's work on  mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience  our  goals.",
+    review: "Michael's work on  web app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience  our  goals.",
    
-    title: "React Native Developer",
+    title: "React Developer",
     date: "2026 - Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with  backend services.",
+      "Built cross-platform web apps using React, integrating with  backend services.",
       "Improved app performance and user experience through code optimization and testing.",
       ,
     ],
@@ -203,49 +203,52 @@ const expLogos = [
 const testimonials = [
   {
     name: "Nkosinamandla Moyo ( Design instructor)",
-    mentions: "@nkosinamandlamoyo", 
+    mentions: "nkosi@uncommon.org", 
+    linkedinUrl: "https://www.linkedin.com/in/nkosinamandla-moyo-sangweni-406389225/",
     review:
      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     
   },
   {
     name: "Sandra Sibanda ( S.W.E instructor)", 
-    mentions: "@sandrasibanda",
+    mentions: "sandra@uncommon.org",
+    linkedinUrl: "https://www.linkedin.com/in/sandra-sibanda-491521352/",
     review:
-       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Michael's contributions to web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    
     
   },
   {
     name: "Charlotte Ncube ( S.W.E instructor)",
     mentions: "@charlottencube",
+    linkedinUrl: "https://www.linkedin.com/in/charlotte-ncube-b926a6367/",
     review:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+       "Michael's work on  web app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience  our  goals.",
     
   },
   
   {
-    name: "Dingulwazi Mntungwa ( Cohort )",
-    mentions: "@dingulwazimntungwa",
+    name: "Mfanelo Sibanda ( Cohort )",
+    mentions: "mfanelosibanda99@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/mfanelo-sibanda-ba4aaa24b",
     review:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Michael brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     
   },
  
    {
     name: "Obediant Tshuma ( Marketing instructor)",
     mentions: "@obedianttshuma",
+    linkedinUrl: "https://www.linkedin.com/in/obedient-tshuma-159329352/",
     review:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "I had the pleasure of teaching this student during the Digital Marketing Crash Course, where he demonstrated exceptional performance, a strong understanding of concepts, and an impressive ability to apply his knowledge. His dedication, versatility, and eagerness to learn stood out throughout the course. He is a talented and capable individual with a strong ability to excel across different disciplines. I highly recommend him for future opportunities.",
+
+
+
     
   },
 
-   {
-    name: "Auxilia Tshuma (Cohort )",
-    mentions: "@auxiliatshuma",
-    review:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    
-  },
+   
 ];
 
 const socialImgs = [

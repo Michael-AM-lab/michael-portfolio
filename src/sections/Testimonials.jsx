@@ -23,6 +23,19 @@ const Testimonials = () => {
                   {testimonial.mentions && (
                     <p className="text-white-50">{testimonial.mentions}</p>
                   )}
+                  <a
+                    className="mt-1 inline-flex items-center"
+                    href={testimonial.linkedinUrl || "https://www.linkedin.com/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn profile for ${testimonial.name}`}
+                  >
+                    <img
+                      className="size-5 brightness-0 invert"
+                      src="/images/linkedin.png"
+                      alt=""
+                    />
+                  </a>
                 </div>
               </div>
             </GlowCard>

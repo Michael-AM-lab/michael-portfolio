@@ -69,9 +69,30 @@ const Hero = () => {
             <HeroExperience />
           </div>
         </figure>
+
+        <a
+          href="#work"
+          className="scroll-cue group absolute left-1/2 z-20 flex -translate-x-1/2 flex-col items-center gap-1 text-white-50 transition-colors duration-300 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+          aria-label="Scroll to explore projects"
+        >
+          <svg
+            className="scroll-cue-icon size-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+          <span className="text-xs tracking-wide opacity-80 transition-opacity group-hover:opacity-100">
+            Scroll to explore
+          </span>
+        </a>
       </div>
 
-      <AnimatedCounter />
     </section>
   );
 };

@@ -107,7 +107,7 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                Nyamatusi: A Wildlife Conservation App
+                Nyamatusi: A safari experience website .
               </h2>
               <p className="text-white-50 md:text-xl">
                 An app built using JavaScript, React, Tailwindcss.
@@ -135,7 +135,7 @@ const AppShowcase = () => {
                   projectName="Gwayi Primary School"
                 />
               </div>
-              <h2>Gwayi Primary School: A School App</h2>
+              <h2>Gwayi Primary School: A school website</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
@@ -146,7 +146,7 @@ const AppShowcase = () => {
                   projectName="Wildwatch"
                 />
               </div>
-              <h2>Wildwatch: A Wildlife Conservation App</h2>
+              <h2>Wildwatch: A wildlife conservation app</h2>
             </div>
           </div>
         </div>
