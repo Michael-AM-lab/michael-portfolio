@@ -211,7 +211,7 @@ const testimonials = [
   },
   {
     name: "Charlotte Ncube ( S.W.E instructor)",
-    mentions: "@charlottencube",
+    mentions: "charlotte@uncommon.org",
     linkedinUrl: "https://www.linkedin.com/in/charlotte-ncube-b926a6367/",
     review:
        "Michael's work on  web app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience  our  goals.",
@@ -229,7 +229,7 @@ const testimonials = [
  
    {
     name: "Obediant Tshuma ( Marketing instructor)",
-    mentions: "@obedianttshuma",
+    mentions: "obedienttshuma@uncommon.org",
     linkedinUrl: "https://www.linkedin.com/in/obedient-tshuma-159329352/",
     review:
       "I had the pleasure of teaching this student during the Digital Marketing Crash Course, where he demonstrated exceptional performance, a strong understanding of concepts, and an impressive ability to apply his knowledge. His dedication, versatility, and eagerness to learn stood out throughout the course. He is a talented and capable individual with a strong ability to excel across different disciplines. I highly recommend him for future opportunities.",
