@@ -3,10 +3,13 @@ import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
 import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
-import { techStackIcons } from "../constants";
+import { techStackIcons, techStackImgs } from "../constants";
+import { useMediaQuery } from "react-responsive";
 // import { techStackImgs } from "../constants";
 
 const TechStack = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   // Animate the tech cards in the skills section
   useGSAP(() => {
     // This animation is triggered when the user scrolls to the #skills wrapper
@@ -59,7 +62,20 @@ const TechStack = () => {
                 {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
                     which renders the 3D model of the tech stack icon. */}
                 <div className="tech-icon-wrapper">
-                  <TechIconCardExperience model={techStackIcon} />
+                  {isMobile ? (
+                    <img
+                      src={
+                        techStackImgs.find(
+                          ({ name }) => name === techStackIcon.name
+                        ).imgPath
+                      }
+                      alt=""
+                      className="max-h-32 max-w-32 object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <TechIconCardExperience model={techStackIcon} />
+                  )}
                 </div>
                 {/* The padding-x and w-full classes are used to add horizontal padding to the 
                     text and make it take up the full width of the component. */}
