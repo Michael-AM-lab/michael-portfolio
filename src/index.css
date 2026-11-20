@@ -134,10 +134,9 @@ section {
       display: none;
     }
 
-    #hero .hero-3d-layout,
-    #contact .contact-3d-scene {
-      pointer-events: none;
-      touch-action: pan-y;
+    #hero .hero-3d-layout canvas,
+    #contact .contact-3d-scene canvas {
+      touch-action: pan-y !important;
     }
 
     .navbar {
@@ -442,6 +441,10 @@ section {
     }
   }
 
+  .footer-download {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-xl border border-black-50 bg-black-100 px-4 py-2 text-sm font-medium text-white-50 transition-colors duration-300 hover:bg-black-50 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white;
+  }
+
   .footer {
     @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
@@ -451,10 +454,6 @@ section {
 
     p {
       @apply text-center md:text-start cursor-pointer;
-    }
-
-    .footer-download {
-      @apply inline-flex items-center justify-center rounded-xl border border-black-50 bg-black-100 px-4 py-2 text-sm font-medium text-white-50 transition-colors duration-300 hover:bg-black-50 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white;
     }
 
     .socials {

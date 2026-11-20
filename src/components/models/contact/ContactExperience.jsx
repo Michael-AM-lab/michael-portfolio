@@ -13,6 +13,7 @@ const ContactExperience = () => {
       camera={{ position: [0, 3, 7], fov: 45 }}
       dpr={isMobile ? 1 : [1, 1.5]}
       frameloop={isMobile ? "demand" : "always"}
+      style={isMobile ? { touchAction: "pan-y" } : undefined}
     >
       <ambientLight intensity={0.5} color="#fff4e6" />
 
@@ -25,12 +26,13 @@ const ContactExperience = () => {
         color="#ffd9b3"
       />
 
-      <OrbitControls
-        enableZoom={false}
-        enableRotate={!isMobile}
-        minPolarAngle={Math.PI / 5}
-        maxPolarAngle={Math.PI / 2}
-      />
+      {!isMobile && (
+        <OrbitControls
+          enableZoom={false}
+          minPolarAngle={Math.PI / 5}
+          maxPolarAngle={Math.PI / 2}
+        />
+      )}
 
       <group scale={[1, 1, 1]}>
         <mesh

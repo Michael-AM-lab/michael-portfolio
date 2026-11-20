@@ -50,15 +50,24 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I am Michael, a developer based in Zimbabwe with a <br/>passion for
+              Hi, I am Michael, a developer based in Zimbabwe with  <br/>a passion for
               code.
             </p>
 
-            <Button
-              text="See my work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="work"
-            />
+            <div className="flex w-full flex-wrap items-center gap-3 md:w-auto">
+              <Button
+                text="See my work"
+                className="h-12 w-60 md:h-16 md:w-80"
+                id="work"
+              />
+              <a
+                className="footer-download h-12 rounded-full md:h-16"
+                href="/Michael_Mlonyeni_CV%20.pdf"
+                download="Michael-Mlonyeni-CV.pdf"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </header>
 
