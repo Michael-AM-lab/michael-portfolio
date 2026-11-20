@@ -87,7 +87,7 @@ const Hero = () => {
             <path d="m6 9 6 6 6-6" />
           </svg>
           <span className="text-xs tracking-wide opacity-80 transition-opacity group-hover:opacity-100">
-            Scroll to explore
+            Click to explore
           </span>
         </a>
       </div>
