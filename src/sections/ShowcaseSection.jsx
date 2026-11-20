@@ -99,7 +99,12 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/nyamatusi.jpeg" alt="Nyamatusi App" />
+              <img
+                src="/images/nyamatusi.jpeg"
+                alt="Nyamatusi App"
+                loading="lazy"
+                decoding="async"
+              />
               <ProjectLinks
                 links={projectLinks.nyamatusi}
                 projectName="Nyamatusi"
@@ -129,6 +134,8 @@ const AppShowcase = () => {
                 <img
                   src="/images/primary.jpeg"
                   alt="School App"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <ProjectLinks
                   links={projectLinks.gwayiPrimary}
@@ -140,7 +147,12 @@ const AppShowcase = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper project-image-fill">
-                <img src="/images/wildwatch.jpeg" alt="YC Directory App" />
+                <img
+                  src="/images/wildwatch.jpeg"
+                  alt="YC Directory App"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <ProjectLinks
                   links={projectLinks.ycDirectory}
                   projectName="Wildwatch"

@@ -16,7 +16,8 @@ const NavBar = () => {
     };
 
     // add the event listener to the window
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     // cleanup the event listener when the component is unmounted
     return () => window.removeEventListener("scroll", handleScroll);
@@ -40,6 +41,14 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+        </nav>
+
+        <nav className="mobile-nav" aria-label="Main navigation">
+          {navLinks.map(({ link, name }) => (
+            <a key={name} href={link}>
+              {name}
+            </a>
+          ))}
         </nav>
 
         <a href="#contact" className="contact-btn group">
