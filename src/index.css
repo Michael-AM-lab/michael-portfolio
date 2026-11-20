@@ -134,6 +134,12 @@ section {
       display: none;
     }
 
+    #hero .hero-3d-layout,
+    #contact .contact-3d-scene {
+      pointer-events: none;
+      touch-action: pan-y;
+    }
+
     .navbar {
       @apply py-3;
     }
