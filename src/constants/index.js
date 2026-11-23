@@ -227,14 +227,24 @@ const testimonials = [
     
   },
  
+  
    {
     name: "Obediant Tshuma ( Marketing instructor)",
     mentions: "obedienttshuma@uncommon.org",
     linkedinUrl: "https://www.linkedin.com/in/obedient-tshuma-159329352/",
     review:
-      "I had the pleasure of teaching this student during the Digital Marketing Crash Course, where he demonstrated exceptional performance, a strong understanding of concepts, and an impressive ability to apply his knowledge. His dedication, versatility, and eagerness to learn stood out throughout the course. He is a talented and capable individual with a strong ability to excel across different disciplines. I highly recommend him for future opportunities.",
+      "Michael demonstrated exceptional performance, strong conceptual understanding, dedication, versatility, and eagerness to learn, making him a talented individual highly recommended for future opportunities.",
 
 
+    
+  },
+
+  {
+    name: "Dingulwazi Mntungwa ( Cohort )",
+    mentions: "mntungwalwazi33@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/dingulwazi-mntungwa-937598273/",
+    review:
+      "Michael was an outstanding cohort member, demonstrating dedication, versatility, strong understanding, and eagerness to learn throughout the course."
 
     
   },
