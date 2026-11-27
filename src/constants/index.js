@@ -197,7 +197,7 @@ const testimonials = [
     mentions: "nkosi@uncommon.org", 
     linkedinUrl: "https://www.linkedin.com/in/nkosinamandla-moyo-sangweni-406389225/",
     review:
-     "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+     "Michael has demonstrated a strong commitment to learning, problem-solving, and personal growth. His creativity, dedication, and willingness to take initiative make him a promising young developer.",
     
   },
   {
